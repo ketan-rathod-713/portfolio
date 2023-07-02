@@ -1,5 +1,4 @@
 import React from "react";
-import Links from "../utils/Links";
 import Badge from "../utils/Badge";
 
 const BlogCard = ({ blog }) => {
@@ -8,7 +7,7 @@ const BlogCard = ({ blog }) => {
     <>
         <div className="sm:grid sm:grid-cols-10 hover:bg-teal-600 p-4 rounded-md cursor-pointer transition-all">
           <div className="sm:col-span-7 sm:order-2 sm:flex sm:flex-col sm:justify-start">
-            <a className=" font-bold text-gray-900 ">{blog.title}</a>
+            <a href="url" className=" font-bold text-gray-900 ">{blog.title}</a>
             
             <div className="flex sm:justify-end">
             <Badge>{blog.year}</Badge>

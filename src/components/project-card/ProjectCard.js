@@ -1,5 +1,4 @@
 import React from "react";
-import Links from "../utils/Links";
 import Badge from "../utils/Badge";
 
 const ProjectCard = ({ project }) => {
@@ -10,7 +9,7 @@ const ProjectCard = ({ project }) => {
       <div className="flex flex-col hover:bg-green-400 p-4 rounded-md cursor-pointer transition-all">
         <div className="md:grid md:grid-cols-10">
           <div className="md:col-span-6 md:order-2">
-            <a className=" font-bold text-gray-900">{project.title}</a>
+            <a className=" font-bold text-gray-900" href="url">{project.title}</a>
             {/* <h3 className="text-[1.1rem]">Senior Engineer</h3> */}
             <p className="text-[1rem] mt-2 text-gray-600">{project.about}</p>
 

@@ -1,10 +1,9 @@
 import React from "react";
-import Badge from "../components/utils/Badge";
-import Links from "../components/utils/Links";
 import Icon from "../components/utils/Icon";
 import ExperienceCard from "../components/project-card/ExperienceCard";
 import ProjectCard from "../components/project-card/ProjectCard";
 import BlogCard from "../components/blog-card/BlogCard";
+import Contact from "../components/contact/Contact";
 
 const profile = {
   name: "Ketan Rathod",
@@ -164,6 +163,12 @@ const HomePage = () => {
             ))}
           </div>
         </div>
+
+
+        {/* contact */}
+
+        <Contact></Contact>
+
       </div>
     </div>
   );
