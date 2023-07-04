@@ -6,8 +6,8 @@ const Contact = () => {
           <h2 className="font-semibold text-2xl  text-blue-700 font-bold">Contact Me</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
 
-          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-5">
-            <div className="sm:col-span-3">
+          <div className="mt-10 grid grid-cols-3 gap-x-6 gap-y-8 sm:grid-cols-5 md:col-span-4">
+            <div className="col-span-3 sm:col-span-6 md:col-span-4">
               <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
                 name
               </label>
@@ -22,7 +22,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="col-span-3 sm:col-span-6 md:col-span-4">
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
               </label>
@@ -37,7 +37,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-span-3">
+            <div className="col-span-3 sm:col-span-6 md:col-span-4">
               <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
                 Message 
               </label>
@@ -55,7 +55,7 @@ const Contact = () => {
             
         <button
           type="submit"
-          className="col-span-3 mt-4 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="col-span-3 sm:col-span-6 md:col-span-4 mt-4 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Send Message
         </button>

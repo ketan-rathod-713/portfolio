@@ -1,8 +1,8 @@
 import React from "react";
 
-const Badge = ({children}) => {
+const Badge = ({children, color}) => {
   return (
-    <span className="mr-3 mt-3 inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+    <span className={`mr-3 mt-3 inline-flex items-center rounded-md px-4 py-2 text-xs font-medium ring-1 ring-inset ${color ? `text-${color}-700 ring-${color}-600/20 bg-${color}-400` :"text-green-700  ring-green-600/20 bg-green-50" } `}>
       {children}
     </span>
   );
