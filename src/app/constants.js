@@ -1,6 +1,87 @@
 export const LIGHT= "light";
 export const DARK = "dark";
 
+export const LIGHT_THEME_COLORS = {
+  // Primary colors
+  primary: "#6750A4",
+  onPrimary: "#FFFFFF",
+
+  // Container colors
+  primaryContainer: "#E9DDFF",
+  onPrimaryContainer: "#22005D",
+
+  // Secondary colors
+  secondary: "#625B71",
+  onSecondary: "#FFFFFF",
+
+  // Container colors
+  secondaryContainer: "#E8DEF8",
+  onSecondaryContainer: "#1E192B",
+
+  // Tertiary colors
+  tertiary: "#7E5260",
+  onTertiary: "#FFFFFF",
+
+  // Container colors
+  tertiaryContainer: "#FFD9E3",
+  onTertiaryContainer: "#31101D",
+
+  // Error colors
+  error: "#BA1A1A",
+  onError: "#FFFFFF",
+
+  // Container colors
+  errorContainer: "#FFDAD6",
+  onErrorContainer: "#410002",
+
+  // Background colors
+  background: "#FFFBFF",
+  onBackground: "#1C1B1E",
+
+  // Surface colors
+  surface: "#FFFBFF",
+  onSurface: "#1C1B1E",
+
+  // Surface variant colors
+  surfaceVariant: "#E7E0EB",
+  onSurfaceVariant: "#49454E",
+
+  // Outline color
+  outline: "#7A757F",
+
+  // Inverse colors
+  onSurfaceInverse: "#F4EFF4",
+  surfaceInverse: "#313033",
+  primaryInverse: "#CFBCFF",
+};
+
+
+export const LIGHT_THEME_ClASSES = {
+  mainHeading: "", // ketan rathod
+  mainSubHeading: "", // 4th year in 
+  secondaryHeading: "", // Education and all 
+  secondaryMainHeading: "",
+  secondarySubHeading: "", // in education degree
+  primaryParagraph: "", // about of me
+  secondaryParagraph: "", // all other
+
+  // background
+  background: "",
+  // buttons
+  resumeButton: "",
+  themeButton: "",
+  contactButton: "",
+  // cards design // background color and all transtion related stuff
+  educationCard: "",
+  projectsCard: "",
+  
+
+  // badges
+  socialLinksBadge: "",
+  cardBadges: "",
+  specialBadge: "" // github
+}
+
 export const resumeFileId = "1LferBXi0M4n-JJzGnfr87b0PrsOU39DG";
 
 export const profile = {

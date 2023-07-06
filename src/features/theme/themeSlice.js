@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { DARK, LIGHT } from './../../app/constants';
+import { DARK, LIGHT, LIGHT_THEME_ClASSES } from './../../app/constants';
+
+
 
 const initialState = {
     mode: "light",
-    primaryColor: "blue",
-    secondaryColor: "red"
+    colors: LIGHT_THEME_ClASSES
 }
 
 const themeSlice = createSlice({
@@ -16,6 +17,7 @@ const themeSlice = createSlice({
                 state.mode = DARK;
             } else if(state.mode === DARK){
                 state.mode = LIGHT;
+                state.colors = LIGHT_THEME_ClASSES;
             }
 
             console.log("action called with", state, action);
@@ -26,6 +28,7 @@ const themeSlice = createSlice({
 
 export const {setMode} = themeSlice.actions;
 export const selectMode = (state) => state.theme.mode;
+export const selectColors = (state) => state.theme.colors;
 
 
 export default themeSlice.reducer;
