@@ -14,13 +14,13 @@ const HomePage = () => {
   const mode = useSelector(selectMode);
 
   return (
-    <div className="bg-navy pt-10 pl-6 pr-6 pb-10 lg:grid lg:grid-cols-2 lg:pt-10 lg:pl-10 lg:pb-6 lg:h-full overflow-y-scroll">
+    <div className="bg-navy pt-10 pl-6 pb-10 lg:grid lg:grid-cols-2 lg:pt-10 lg:pl-10 lg:pb-6 lg:h-full overflow-y-scroll">
       
 
       <IntroSection></IntroSection>
 
 {/* all sections grid */}
-      <div className="mt-24 lg:mt-0 text-[1rem] lg:col-span-1 lg:pl-10 lg:h-full lg:overflow-y-auto">
+      <div className="mt-24 lg:mt-0 pr-4 text-[1rem] lg:col-span-1 lg:pl-10 lg:h-full lg:overflow-y-auto">
 {/* about section */}
         <div className={` ${mode === LIGHT && "bg-onPrimary"}  ${mode === DARK && "text-darkPrimary"}`}>
           <SubHeading>About</SubHeading>
@@ -48,7 +48,7 @@ const HomePage = () => {
           <SubHeading>Education</SubHeading>
           <div className={`flex flex-col space-y-12`}>
             {educationData.map((education) => (
-              <div className={`flex flex-col space-y-12 ${mode === LIGHT &&  "bg-onPrimary transition-all hover:bg-primaryContainer"}  ${mode === DARK && "text-darkPrimary"}`}>
+              <div className={`flex flex-col space-y-12 ${mode === LIGHT &&  "bg-onPrimary transition-all hover:bg-primaryContainer duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"}  ${mode === DARK && "text-darkPrimary hover:bg-onPrimaryContainer duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"}`}>
               <EducationCard education={education}></EducationCard>
               </div>
             ))}
@@ -60,7 +60,7 @@ const HomePage = () => {
           <SubHeading>Projects</SubHeading>
           <div className="flex flex-col space-y-16">
             {projects.map((project) => (
-              <div className={`flex flex-col space-y-12 ${mode === LIGHT &&  "bg-onPrimary transition-all hover:bg-primaryContainer"}  ${mode === DARK && "text-darkPrimary"}`}>
+              <div className={`flex flex-col space-y-12 ${mode === LIGHT &&  "bg-onPrimary  transition-all hover:bg-primaryContainer duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"}  ${mode === DARK && "text-darkPrimary hover:bg-onPrimaryContainer duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"}`}>
               <ProjectCard project={project}></ProjectCard>
               </div>
             ))}
@@ -68,16 +68,16 @@ const HomePage = () => {
         </div>
         
         {/* Writtings */}
-        <div className="mt-24 text-[1.2rem]">
+        {/* <div className="mt-24 text-[1.2rem]">
           <SubHeading>Writtings</SubHeading>
           <div className="flex flex-col space-y-16">
             {blogs.map((blog) => (
-              <div className={`flex flex-col space-y-12 ${mode === LIGHT &&  "bg-onPrimary transition-all hover:bg-primaryContainer"}  ${mode === DARK && "text-darkPrimary"}`}>
+              <div className={`flex flex-col space-y-12 ${mode === LIGHT &&  "bg-onPrimary  transition-all hover:bg-primaryContainer duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"}  ${mode === DARK && "text-darkPrimary hover:bg-onPrimaryContainer duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"}`}>
               <BlogCard blog={blog}></BlogCard>
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
 
         {/* contact */}

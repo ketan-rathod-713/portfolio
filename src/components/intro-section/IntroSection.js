@@ -13,7 +13,7 @@ const IntroSection = () => {
     <div className="flex flex-col lg:col-span-1 lg:h-full">
         <div className="space-y-3">
           <div className="">
-            <img className="h-52 rounded-full" src="https://avatars.githubusercontent.com/u/76687839?s=400&u=f0eb0f5980c229de22d72ee4ad132d411d1d4359&v=4" alt="" />
+            <img className="transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30 h-52 rounded-full" src="https://avatars.githubusercontent.com/u/76687839?s=400&u=f0eb0f5980c229de22d72ee4ad132d411d1d4359&v=4" alt="" />
           </div>
           <h1 className={`text-5xl font-bold text-left ${mode === LIGHT ? "text-primary" : "text-darkPrimary"}`}>{profile.name}</h1>
           <h2 className={`text-2xl font-bold text-blue-300 ${mode === LIGHT ? "text-secondary" : "text-darkSecondary"}`}>{profile.role}</h2>
