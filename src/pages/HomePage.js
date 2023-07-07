@@ -1,8 +1,7 @@
 import React from "react";
 import ProjectCard from "../components/project-card/ProjectCard";
-import BlogCard from "../components/blog-card/BlogCard";
 import Contact from "../components/contact/Contact";
-import { projects, blogs, about, educationData, LIGHT, DARK } from "../app/constants";
+import { projects, about, educationData, LIGHT, DARK } from "../app/constants";
 import IntroSection from "../components/intro-section/IntroSection";
 import EducationCard from "../components/project-card/EducationCard";
 import { useSelector } from "react-redux";
